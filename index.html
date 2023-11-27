@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: beige;
+        }
+
+        .container {
+            width: 24vw;
+            margin: 50px auto;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            background-color: #fff;
+        }
+
+        .image {
+            margin-bottom: 10px;
+        }
+
+        .image img {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+        }
+
+        .tag {
+            margin: 5px;
+            color: rgb(105, 105, 105);
+        }
+
+        .text-content {
+            margin-top: 10px;
+        }
+
+        .text-content h1 {
+            font-size: 20px;
+            margin-bottom: 8px;
+            color: #4e4e4e;
+        }
+
+        .text-content p {
+            line-height: 25px;
+            color: rgb(105, 105, 105);
+            font-weight: 300;
+        }
+
+        .text-content span {
+            margin: auto;
+        }
+
+        .read-more-btn {
+            text-align: center;
+            margin: 22px 0 5px 0;
+        }
+
+        .read-more-btn a {
+            padding: 10px 13px;
+            border: 1px solid rgb(67, 67, 228);
+            border-radius: 15px;
+            background-color: rgb(241, 241, 241);
+            font-size: 13px;
+            transition: all 0.3s ease;
+        }
+
+        .read-more-btn a:hover {
+            background-color: rgb(45, 45, 175);
+            color: #fff;
+        }
+
+        /* media query */
+        @media(max-width:768px) {
+            .container {
+                width: 35vw;
+            }
+
+            .text-content h1 {
+                font-size: 18px;
+            }
+
+            .text-content p {
+                font-size: 15px;
+            }
+        }
+
+        @media(max-width:600px) {
+            .container {
+                width: 75vw;
+                margin-top: 0;
+            }
+        }
+        @media(max-width:320px) {
+            .container {
+                width: 85vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="nature">
+        </div>
+        <div>
+            <span class="tag">Nature</span>
+            <span class="tag">Lake</span>
+            <div class="text-content">
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, illo saepe sit asperiores sed
+                    laudantium? Illo voluptas accusantium tempore omnis, cupiditate, magnam ducimus perspiciatis modi
+                    ipsa minus laborum similique ipsum.</p>
+            </div>
+            <div class="read-more-btn">
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
